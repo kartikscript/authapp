@@ -44,7 +44,7 @@ export default function LoginPage(){
     <div className="h-screen capitalize flex justify-center items-center bg-gradient-to-br from-sky-700 to-green-300 ">
         <div className="w-4/6 h-5/6 flex  items-center justify-between bg-white/50 rounded-tr-[30%] rounded-bl-[30%]">
             <h1 className="z-10 text-8xl self-start m-6  text-white/40 border-r-2 border-b-2 border-r-black/10 border-b-black/10 pb-4">Login</h1>
-            <div className="border-2 border-r-0 border-b-0 border-black/10  ml- mt-20 p-12 py-12">
+            <div className="border-2 border-r-0 border-b-0 border-black/10 -translate-x-48 mt-14 p-12 py-12">
               
                 <h1 className='text-4xl text-white/70 border-b-2 border-b-black/40 mb-6 px-0'>{loading?"Processing..":"Login here"}</h1>
               
