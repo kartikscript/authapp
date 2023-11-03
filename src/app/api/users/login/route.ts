@@ -26,7 +26,7 @@ export async function POST(req:NextRequest){
       return NextResponse.json({message:'incorrect password'}, {status:400})
     }
     //create token data
-    const tokenData= {  
+    const tokenData= {  //payload
       id: user._id,
       email:user.email,
       username:user.username,
