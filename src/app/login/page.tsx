@@ -3,6 +3,7 @@ import Link from "next/link"
 import React, { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import axios, { Axios } from "axios"
+import { sendEmail } from "@/helpers/mailer"
 
 
 
@@ -31,6 +32,7 @@ export default function LoginPage(){
     
   }
 
+ 
   useEffect(()=>{
      if(user.email.length>0,user.password.length>0){
          setButtonDisabled(false)
@@ -70,6 +72,7 @@ export default function LoginPage(){
                         className="p-2 text-2xl bg-emerald-800 text-white/80 border block mt-8 mx-auto  border-gray-300 rounded-lg mb-2 focus:outline-none focus:border-gray-600"
                         onClick={onLogin}>{buttonDisabled?"Fill Details":"login"}</button>
                   <Link  className='flex justify-center  text-emerald-700 text-base ' href="/signup">visit signup page</Link>
+                  <Link  className='flex justify-center  text-emerald-700 text-base ' href="/forgotpassword">Forgot password ?</Link>
        </div>
        </div>
     </div>
