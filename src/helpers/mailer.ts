@@ -46,3 +46,55 @@ return mailresponse;
     throw new Error(error.message)
 }
 }
+
+
+
+////////////////////////////////////////
+const enum Size{small=1, med, lar}//default value would be 0 if no value assigned
+let mySize  =Size.med
+const enum Size2{small='yay', med=3,lar,exlar}//lar=4,...
+const num:number =12;
+
+const objVariable:{readonly id:number,isActive:boolean,name?:string}={
+     
+      id:1,
+      isActive:false
+
+      }
+//////////////////////////
+type Objspecs ={
+readonly id:number,
+isActive:boolean,
+addNum:(num1:number, num2:number)=>number
+}
+
+const obj1:Objspecs={
+  id:2,
+  isActive:true,
+  addNum:(num:number,num2:number)=>{return 1+2}
+}
+
+function objfunc(user :Objspecs){}
+objfunc({id:3,isActive:false,addNum:(num1:number,num2:number)=>34})
+//////////////////////////////
+
+const getNum=(val:string , roundTo:number=2):number => {
+    return parseInt(val ,roundTo)
+}
+getNum('12kg',3)
+
+const random =():{name:string ,id :number}=>{
+
+  return {name:'naam' ,id:2}
+}
+//////////////////////////
+
+const ran:string|number=12
+
+type Nums=10 |20 |30
+let num1:Nums=20// same as let num1:10 |20 |30
+num1=30
+
+const errorMsg=function(errmsg:string):never{ // never type is used when we know the value will never occur
+  throw new Error(errmsg)
+}

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function userProfile() {
+export default function UserProfilee() {
   const [data, setData] = useState("nothing");
 
   const router = useRouter();

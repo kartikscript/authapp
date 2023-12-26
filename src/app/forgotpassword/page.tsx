@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function forgotpassword() {
+export default function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [buttonDisabled, setButtonDisabled] = useState(false);
 

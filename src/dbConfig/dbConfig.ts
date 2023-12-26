@@ -12,7 +12,7 @@ export async function connect() {
 
     connection.on("error", (err) => {
       console.log("MongoDB error"+err);
-      // process.exit()
+      process.exit()
     });
   } catch (err) {
     console.log("something went wrong", err);

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react"
 
-export default function resetpassword() {
+export default function ResetPassword() {
   const [token, setToken] = useState("");
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm]=useState('')
